@@ -3,7 +3,8 @@ EE 5802 Directed Study with Dr Weaver
 
 # Ybus Generator - MATLAB Live Script for Power Network Analysis
 
-This Live Script performs power network analysis using MATLAB.
+This Live Script performs power network analysis using MATLAB. [Link to solving_systems_nbus.m](https://raw.githubusercontent.com/jecordjotse/DPS/main/solving_systems_nbus.m)
+
 
 ## Input Parameters
 - `x`: Matrix of unknown variables representing voltage magnitude, injected current, and bus angle for each bus.
