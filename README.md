@@ -55,7 +55,7 @@ The `solving_sys_rect3` function is a versatile tool for power network analysis,
 # gen bus DAE - Simulink ODE Function
 
 ## Description
-The `fcn` function computes the derivatives of angular velocities (`dw_dot`), injected currents (`i_inj`), bus voltages (`vbus`), angular positions (`ang`), and angular velocities (`w`) in a power system with multiple buses and loads.
+The `gen bus DAE` function computes the derivatives of angular velocities (`dw_dot`), injected currents (`i_inj`), bus voltages (`vbus`), angular positions (`ang`), and angular velocities (`w`) in a power system with multiple buses and loads. [Link to Simulink File](https://github.com/jecordjotse/DPS/raw/main/nbus_dyna_angle_change_II.slx)
 
 ## Inputs
 - `theta`: Vector containing the angular positions of each bus.
