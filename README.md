@@ -51,3 +51,34 @@ The `solving_sys_rect3` function is designed to efficiently solve a system of eq
 
 ## Conclusion
 The `solving_sys_rect3` function is a versatile tool for power network analysis, enabling the efficient solution of systems of equations for complex networks. Its ability to handle both known and unknown parameters makes it valuable for determining critical network parameters and ensuring network stability and operation.
+
+# gen bus DAE - Simulink ODE Function
+
+## Description
+The `fcn` function computes the derivatives of angular velocities (`dw_dot`), injected currents (`i_inj`), bus voltages (`vbus`), angular positions (`ang`), and angular velocities (`w`) in a power system with multiple buses and loads.
+
+## Inputs
+- `theta`: Vector containing the angular positions of each bus.
+- `dw`: Vector containing the angular velocities of each bus.
+- `v`: Vector containing the voltages of each bus.
+- `load_`: Vector containing the loads at each bus.
+- `J`: Moment of inertia of the system.
+- `Tm`: Torque applied to each bus.
+- `B`: Damping coefficient.
+- `R`: Resistance of the system.
+- `bus_number`: Number of buses in the system.
+- `wref`: Reference angular velocity.
+
+## Outputs
+- `dw_dot`: Derivatives of angular velocities.
+- `i_inj`: Injected currents.
+- `vbus`: Bus voltages.
+- `w`: Angular velocities.
+- `ang`: Angular positions.
+
+## Algorithm
+1. Initialize variables and parameters.
+2. Calculate initial guesses for the solver.
+3. Solve the system of equations using `fsolve`.
+4. Extract the computed values of `i_inj`, `vbus`, and `ang`.
+5. Calculate the derivatives of angular velocities (`dw_dot`) based on the solved values and physical parameters.
